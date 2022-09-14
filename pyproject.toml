@@ -1,0 +1,30 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "BlueGlassBlock", email = "blueglassblock@outlook.com"},
+]
+dependencies = [
+    "httpx>=0.23.0",
+    "pydantic>=1.9.2",
+    "rich>=12.5.1",
+    "mutagen>=1.45.1",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+[project.optional-dependencies]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "isort>=5.10.1",
+    "black>=22.6.0",
+    "ipython>=8.4.0",
+    "ipykernel>=6.15.1",
+]
